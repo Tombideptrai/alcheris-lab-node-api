@@ -13,6 +13,10 @@ function createApp() {
     res.json({ name: 'todo-api', message: 'Hello from your API' });
   });
 
+  app.get('/health', (req, res) => {
+    res.json({ status: 'ok' });
+  });
+
   return app;
 }
 
