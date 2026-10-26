@@ -17,6 +17,10 @@ function createApp() {
     res.json({ status: 'ok' });
   });
 
+  app.get('/todos', (req, res) => {
+    res.json(todos);
+  });
+
   return app;
 }
 
